@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EarthWars Season 2 — Complete Wiki</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+<aside class="sidebar">
+  <div class="sidebar-header"><h1>EarthWars</h1><p>Season 2 Complete Wiki</p></div>
+  <div class="sidebar-search"><input type="text" id="searchInput" placeholder="Search wiki..." oninput="filterNav(this.value)"></div>
+  <nav>
+    <div class="nav-section"><div class="nav-section-title">Getting Started</div>
+      <a class="nav-link active" data-section="home"><span class="nav-icon">🏠</span>Home</a>
+      <a class="nav-link" data-section="quickstart"><span class="nav-icon">⚡</span>Quick Start</a>
+      <a class="nav-link" data-section="setup"><span class="nav-icon">🔧</span>Server Setup</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Countries</div>
+      <a class="nav-link" data-section="countries"><span class="nav-icon">🏰</span>Country System</a>
+      <a class="nav-link" data-section="ranks"><span class="nav-icon">👑</span>Ranks & Permissions</a>
+      <a class="nav-link" data-section="government"><span class="nav-icon">🏛️</span>Government Types</a>
+      <a class="nav-link" data-section="claims"><span class="nav-icon">📍</span>Claims & Territory</a>
+      <a class="nav-link" data-section="walls"><span class="nav-icon">🧱</span>Walls & Defense</a>
+      <a class="nav-link" data-section="neutral"><span class="nav-icon">🕊️</span>Neutral Status</a>
+      <a class="nav-link" data-section="decline"><span class="nav-icon">📉</span>Decline & Annex</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Warfare</div>
+      <a class="nav-link" data-section="war"><span class="nav-icon">⚔️</span>War System</a>
+      <a class="nav-link" data-section="siege"><span class="nav-icon">🏴</span>Sieges</a>
+      <a class="nav-link" data-section="combat"><span class="nav-icon">🗡️</span>Combat & PvP</a>
+      <a class="nav-link" data-section="bombs"><span class="nav-icon">💣</span>TNT & Bombs</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Diplomacy</div>
+      <a class="nav-link" data-section="diplomacy"><span class="nav-icon">🤝</span>Diplomacy</a>
+      <a class="nav-link" data-section="espionage"><span class="nav-icon">🕵️</span>Espionage</a>
+      <a class="nav-link" data-section="trade"><span class="nav-icon">📦</span>Trade Routes</a>
+      <a class="nav-link" data-section="colonies"><span class="nav-icon">🏗️</span>Colonies</a>
+      <a class="nav-link" data-section="plots"><span class="nav-icon">🗺️</span>Plots</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Progression</div>
+      <a class="nav-link" data-section="skills"><span class="nav-icon">⭐</span>Skills (30 Perks)</a>
+      <a class="nav-link" data-section="valuable"><span class="nav-icon">💎</span>Valuable Blocks</a>
+      <a class="nav-link" data-section="enchants"><span class="nav-icon">✨</span>Custom Enchants</a>
+      <a class="nav-link" data-section="dungeons"><span class="nav-icon">🏚️</span>Dungeons</a>
+      <a class="nav-link" data-section="playtime"><span class="nav-icon">⏱️</span>Playtime Rewards</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Items</div>
+      <a class="nav-link" data-section="goditems"><span class="nav-icon">🔱</span>God Items (20+)</a>
+      <a class="nav-link" data-section="lootbox"><span class="nav-icon">🎁</span>Loot Boxes</a>
+      <a class="nav-link" data-section="kits"><span class="nav-icon">🎒</span>Kits</a>
+      <a class="nav-link" data-section="vouchers"><span class="nav-icon">🎫</span>Vouchers</a>
+      <a class="nav-link" data-section="wands"><span class="nav-icon">🪄</span>Wands</a>
+      <a class="nav-link" data-section="mobcatcher"><span class="nav-icon">🥚</span>Mob Catcher</a>
+      <a class="nav-link" data-section="spawners"><span class="nav-icon">🔲</span>Spawners</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Economy</div>
+      <a class="nav-link" data-section="economy"><span class="nav-icon">💰</span>Economy & Shop</a>
+      <a class="nav-link" data-section="taxes"><span class="nav-icon">🏦</span>Taxes & Upkeep</a>
+      <a class="nav-link" data-section="bounty"><span class="nav-icon">🎯</span>Bounties</a>
+      <a class="nav-link" data-section="coinflip"><span class="nav-icon">🪙</span>Coinflip</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Social</div>
+      <a class="nav-link" data-section="chat"><span class="nav-icon">💬</span>Chat System</a>
+      <a class="nav-link" data-section="duel"><span class="nav-icon">⚔️</span>Duels</a>
+      <a class="nav-link" data-section="resume"><span class="nav-icon">📋</span>Resumes & Recruit</a>
+      <a class="nav-link" data-section="polls"><span class="nav-icon">📊</span>Polls</a>
+      <a class="nav-link" data-section="discord"><span class="nav-icon">🔗</span>Discord Link</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Events</div>
+      <a class="nav-link" data-section="events"><span class="nav-icon">🎮</span>Server Events</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">World</div>
+      <a class="nav-link" data-section="safezones"><span class="nav-icon">🛡️</span>Safe Zones & Moshpits</a>
+      <a class="nav-link" data-section="portals"><span class="nav-icon">🌀</span>Portals & Nether</a>
+      <a class="nav-link" data-section="territory"><span class="nav-icon">🚧</span>Territory Mechanics</a>
+      <a class="nav-link" data-section="holograms"><span class="nav-icon">✏️</span>Holograms</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Admin</div>
+      <a class="nav-link" data-section="config"><span class="nav-icon">⚙️</span>Configuration</a>
+      <a class="nav-link" data-section="punishments"><span class="nav-icon">🔨</span>Punishments</a>
+      <a class="nav-link" data-section="tutorial"><span class="nav-icon">📖</span>Tutorial System</a>
+      <a class="nav-link" data-section="homes"><span class="nav-icon">🏡</span>Homes System</a>
+      <a class="nav-link" data-section="vaults"><span class="nav-icon">🔒</span>Player Vaults</a>
+      <a class="nav-link" data-section="scoreboard"><span class="nav-icon">📊</span>Scoreboard</a>
+      <a class="nav-link" data-section="broadcasts"><span class="nav-icon">📢</span>Auto Broadcasts</a>
+      <a class="nav-link" data-section="datafiles"><span class="nav-icon">💾</span>Data Files</a>
+      <a class="nav-link" data-section="commands"><span class="nav-icon">📜</span>All Commands</a>
+    </div>
+  </nav>
+</aside>
+<main class="main"><div class="content" id="wikiContent"></div></main>
+<script src="wiki-content.js"></script>
+<script>
+const navLinks=document.querySelectorAll('.nav-link');
+function navigateTo(id){
+  document.querySelectorAll('.wiki-section').forEach(s=>s.classList.remove('active'));
+  navLinks.forEach(l=>l.classList.remove('active'));
+  const s=document.getElementById(id);
+  if(s)s.classList.add('active');
+  const l=document.querySelector(`.nav-link[data-section="${id}"]`);
+  if(l)l.classList.add('active');
+  window.scrollTo(0,0);
+  document.querySelector('.sidebar').classList.remove('open');
+  history.replaceState(null,null,'#'+id);
+}
+navLinks.forEach(l=>l.addEventListener('click',()=>navigateTo(l.getAttribute('data-section'))));
+function filterNav(q){
+  q=q.toLowerCase().trim();
+  navLinks.forEach(l=>{
+    const t=l.textContent.toLowerCase();
+    const sec=document.getElementById(l.getAttribute('data-section'));
+    const st=sec?sec.textContent.toLowerCase():'';
+    l.style.display=(!q||t.includes(q)||st.includes(q))?'':'none';
+  });
+}
+window.addEventListener('load',()=>{
+  if(window.location.hash){navigateTo(window.location.hash.substring(1));}
+});
+</script>
+</body>
+</html>
