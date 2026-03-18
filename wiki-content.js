@@ -892,112 +892,11 @@ holograms: `
 </ul>
 `,
 
-/* ────────────── CONFIG ────────────── */
-config: `
-<h2>Configuration</h2>
-<p>Server configuration guide for administrators.</p>
-
-<h3>Main Config</h3>
-<p><code>config.yml</code> controls most settings:</p>
-<ul>
-  <li>Economy rates and shop prices</li>
-  <li>War declaration costs and timers</li>
-  <li>Claim limits and territory settings</li>
-  <li>Combat tag duration</li>
-  <li>Safe zone and moshpit definitions</li>
-</ul>
-
-<p><code>/cw reload</code> — Reload without restarting.</p>
-`,
-
-/* ────────────── PUNISHMENTS ────────────── */
-punishments: `
-<h2>Punishments</h2>
-<table>
-  <tr><th>Command</th><th>Description</th></tr>
-  <tr><td><code>/ban &lt;player&gt; &lt;reason&gt;</code></td><td>Permanent ban</td></tr>
-  <tr><td><code>/tempban &lt;player&gt; &lt;time&gt; &lt;reason&gt;</code></td><td>Temporary ban</td></tr>
-  <tr><td><code>/mute &lt;player&gt; &lt;time&gt;</code></td><td>Mute a player</td></tr>
-  <tr><td><code>/kick &lt;player&gt; &lt;reason&gt;</code></td><td>Kick from server</td></tr>
-  <tr><td><code>/warn &lt;player&gt; &lt;reason&gt;</code></td><td>Issue a warning</td></tr>
-</table>
-`,
-
-/* ────────────── TUTORIAL ────────────── */
-tutorial: `
-<h2>Tutorial System</h2>
-<p>New players get an interactive tutorial on first join.</p>
-<ul>
-  <li>Step-by-step walkthrough of core mechanics</li>
-  <li>Rewards for completing each stage</li>
-  <li>Replay with <code>/tutorial</code></li>
-  <li>Covers: countries, claiming, combat, economy</li>
-</ul>
-`,
-
-/* ────────────── HOMES ────────────── */
-homes: `
-<h2>Homes System</h2>
-<table>
-  <tr><th>Command</th><th>Description</th></tr>
-  <tr><td><code>/sethome &lt;name&gt;</code></td><td>Set a home</td></tr>
-  <tr><td><code>/home &lt;name&gt;</code></td><td>Teleport to a home</td></tr>
-  <tr><td><code>/delhome &lt;name&gt;</code></td><td>Delete a home</td></tr>
-  <tr><td><code>/homes</code></td><td>List all homes</td></tr>
-</table>
-<p>Home limit depends on rank and perks.</p>
-`,
-
-/* ────────────── VAULTS ────────────── */
-vaults: `
-<h2>Player Vaults</h2>
-<p>Personal storage accessible from anywhere.</p>
-<ul>
-  <li><code>/pv</code> — Open your vault</li>
-  <li><code>/pv &lt;number&gt;</code> — Open specific vault page</li>
-</ul>
-<p>Vault size depends on rank. Items are safe from death and raids.</p>
-`,
-
-/* ────────────── SCOREBOARD ────────────── */
-scoreboard: `
-<h2>Scoreboard</h2>
-<p>The sidebar shows real-time info:</p>
-<ul>
-  <li>Country name and rank</li>
-  <li>Personal balance</li>
-  <li>Current territory</li>
-  <li>Active wars</li>
-  <li>Online country members</li>
-  <li>Kill/death stats</li>
-</ul>
-<p>Toggle with <code>/sb toggle</code>.</p>
-`,
-
-/* ────────────── BROADCASTS ────────────── */
-broadcasts: `
-<h2>Auto Broadcasts</h2>
-<p>Periodic server-wide messages.</p>
-<ul>
-  <li>Tips rotate every few minutes</li>
-  <li>Event announcements broadcast server-wide</li>
-  <li>War declarations trigger alerts</li>
-  <li>Configurable in <code>config.yml</code></li>
-</ul>
-`,
-
-/* ────────────── DATA FILES ────────────── */
-datafiles: `
-<h2>Data Files</h2>
-<table>
-  <tr><th>File</th><th>Contents</th></tr>
-  <tr><td><code>countries.yml</code></td><td>All country data (members, claims, treasury)</td></tr>
-  <tr><td><code>players.db</code></td><td>SQLite — player stats and skills</td></tr>
-  <tr><td><code>config.yml</code></td><td>Server configuration</td></tr>
-  <tr><td><code>valuable_blocks.db</code></td><td>Valuable block counts per country</td></tr>
-  <tr><td><code>skill_data.db</code></td><td>Player skill progress</td></tr>
-</table>
-<div class="info-box warn">Always back up data files before making changes.</div>
+/* ────────────── ADMIN (Restricted) ────────────── */
+"admin-info": `
+<h2>Admin &amp; Configuration</h2>
+<div class="info-box warn">This section is restricted to server administrators. If you need access, contact a server admin.</div>
+<p>Administration tools, configuration files, and management commands are available in-game for players with the <code>countrywars.admin</code> permission.</p>
 `,
 
 /* ────────────── ALL COMMANDS ────────────── */
@@ -1064,16 +963,6 @@ commands: `
   <tr><td><code>/discord link</code></td><td>Link Discord</td></tr>
 </table>
 
-<h3>Admin</h3>
-<table>
-  <tr><th>Command</th><th>Description</th></tr>
-  <tr><td><code>/cw reload</code></td><td>Reload config</td></tr>
-  <tr><td><code>/cw admin</code></td><td>Admin panel</td></tr>
-  <tr><td><code>/ban &lt;player&gt;</code></td><td>Ban</td></tr>
-  <tr><td><code>/tempban &lt;player&gt; &lt;time&gt;</code></td><td>Temp ban</td></tr>
-  <tr><td><code>/mute &lt;player&gt; &lt;time&gt;</code></td><td>Mute</td></tr>
-  <tr><td><code>/kick &lt;player&gt;</code></td><td>Kick</td></tr>
-</table>
 `
 
 };
