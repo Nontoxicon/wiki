@@ -63,6 +63,9 @@ home: `
 "store-ranks": `
 <h2>Server Ranks</h2>
 <p>Support the server and unlock exclusive perks, kits, and commands. Each rank includes all perks from the rank below it.</p>
+<div class="info-box success">
+  <strong>Purchase at:</strong> <a href="https://store.earthwarsmp.com" target="_blank" style="color:var(--green);font-weight:600">store.earthwarsmp.com</a>
+</div>
 
 <div class="rank-card knight">
   <div class="rank-header">
@@ -193,19 +196,18 @@ home: `
 /* ────────────── SERVER STORE — GOD LOOT BOX ────────────── */
 "store-lootbox": `
 <h2>God Loot Box</h2>
-<p>The <strong>God Loot Box</strong> is the ultimate crate available in the server store. Each box guarantees a random <strong>God Item</strong> — legendary weapons, armor, and tools with unique abilities and maxed enchantments.</p>
+<div class="info-box success">
+  <strong>Purchase at:</strong> <a href="https://store.earthwarsmp.com" target="_blank" style="color:var(--green);font-weight:600">store.earthwarsmp.com</a>
+</div>
+<p>The <strong>God Loot Box</strong> is the ultimate crate available in the server store. Each box gives you <strong>3 random God Items</strong> — legendary weapons, armor, and tools with unique abilities and maxed enchantments.</p>
 
 <div class="card">
   <h4>What You Get</h4>
   <ul>
-    <li><strong>1 Random God Item</strong> from the pool of 21+ unique legendary items</li>
-    <li>God Items have custom abilities, maxed enchantments, and unbreakable durability</li>
-    <li>Items include swords, axes, bows, tridents, armor sets, pickaxes, and more</li>
+    <li><strong>3 Random God Items</strong> per box from the pool below</li>
+    <li>All God Items have custom abilities, maxed enchantments, and are unbreakable</li>
+    <li>Includes swords, axes, bows, armor sets, pickaxes, elytra, and more</li>
   </ul>
-</div>
-
-<div class="info-box">
-  <strong>Tip:</strong> God Items are some of the most powerful gear on the server. Check the <a style="color:var(--accent-light);cursor:pointer" onclick="navigateTo('goditems')">God Items page</a> for the full list of possible drops and their abilities.
 </div>
 
 <h3>How It Works</h3>
@@ -213,11 +215,90 @@ home: `
   <li>Purchase a God Loot Box from the server store</li>
   <li>You receive a <strong>Loot Box key</strong> in-game</li>
   <li>Use <code>/lootboxes</code> to open the crate GUI</li>
-  <li>Watch the animated spin and claim your God Item</li>
+  <li>Watch the animated spin and claim your 3 God Items</li>
 </ol>
 
+<h3>God Items in the Loot Pool</h3>
+
+<h4>Weapons</h4>
+<table>
+  <tr><th>Item</th><th>Type</th><th>Ability</th></tr>
+  <tr><td><strong style="color:#aaffe0">Wind Blade</strong></td><td>Netherite Sword</td><td><strong>Jetstream</strong> — Launch into the sky and take controlled flight. Enemies near landing take damage. <em>(16s CD)</em></td></tr>
+  <tr><td><strong style="color:#64ffd8">Serpent's Fang</strong></td><td>Netherite Sword</td><td><strong>Tidal Barrage</strong> — Rapid 3-hit combo on attack. <strong>Riptide Lunge</strong> — Surge through water striking all enemies. <em>(12s CD)</em></td></tr>
+  <tr><td><strong style="color:#ff8c00">Ember Edge</strong></td><td>Netherite Sword</td><td><strong>Scorching Strikes</strong> — Sets targets on fire. <strong>Inferno Burst</strong> — 3-block fire AoE. <em>(12s CD)</em></td></tr>
+  <tr><td><strong style="color:#b400c8">Shadow Blade</strong></td><td>Netherite Sword</td><td><strong>Backstab</strong> — +25% damage from behind. <strong>Ghastly Step</strong> — Invisibility + Speed II for 4s. <em>(20s CD)</em></td></tr>
+  <tr><td><strong style="color:#ff6040">Soulstealer</strong></td><td>Netherite Sword</td><td><strong>Crimson Pact</strong> — Kills restore HP/hunger + Speed. <strong>Deathbringer</strong> — AoE damage + knockback. <em>(25s CD)</em></td></tr>
+  <tr><td><strong style="color:#50a0f0">Frostbite</strong></td><td>Netherite Axe</td><td><strong>Chilling Strikes</strong> — 20% chance Slowness I. <strong>Frost Nova</strong> — AoE Slowness II + Mining Fatigue. <em>(18s CD)</em></td></tr>
+  <tr><td><strong style="color:#dc64ff">Gravity Bow</strong></td><td>Bow</td><td><strong>Black Hole</strong> — Arrow creates a gravity well pulling in all nearby enemies. <em>(45s CD)</em></td></tr>
+  <tr><td><strong style="color:#ffe080">Giant Broadsword</strong></td><td>Netherite Sword</td><td><strong>Unbreakable</strong> — Channel for 1s, then gain Strength, Resistance, and heal every 2s for 10s. Can overheal. <em>(70s CD)</em></td></tr>
+</table>
+
+<h4>Tools</h4>
+<table>
+  <tr><th>Item</th><th>Type</th><th>Ability</th></tr>
+  <tr><td><strong style="color:#c8a050">Terraforge</strong></td><td>Netherite Pickaxe</td><td><strong>Miner's Instinct</strong> — Insta-breaks all blocks. <strong>Earthquake</strong> — AoE damage + launch enemies. <em>(15s CD)</em></td></tr>
+</table>
+
+<h4>Armor — Titan Set</h4>
+<p>Full set grants <strong>Resistance I</strong> permanently.</p>
+<table>
+  <tr><th>Item</th><th>Slot</th><th>Passive</th></tr>
+  <tr><td><strong style="color:#ffc830">Titan's Crown</strong></td><td>Helmet</td><td><strong>Titan's Sight</strong> — Night Vision in dark areas</td></tr>
+  <tr><td><strong style="color:#ffc830">Titan's Guard</strong></td><td>Chestplate</td><td><strong>Titan's Heart</strong> — +1 heart max health</td></tr>
+  <tr><td><strong style="color:#ffc830">Titan's Stride</strong></td><td>Leggings</td><td><strong>Titan's Stride</strong> — Speed I while sprinting</td></tr>
+  <tr><td><strong style="color:#ffc830">Titan's Treads</strong></td><td>Boots</td><td><strong>Titan's Landing</strong> — No fall damage up to 10 blocks</td></tr>
+</table>
+
+<h4>Special</h4>
+<table>
+  <tr><th>Item</th><th>Type</th><th>Ability</th></tr>
+  <tr><td><strong style="color:#d0b0ff">Celestial Wings</strong></td><td>Elytra</td><td><strong>Skyfall Boost</strong> — Press SHIFT while gliding to propel forward (no rockets needed). <strong>Cloud Walker</strong> — Reduced fall damage.</td></tr>
+</table>
+
 <div class="info-box warn">
-  <strong>Note:</strong> God Items are permanent and unbreakable. They cannot be crafted — the only way to obtain them is through God Loot Boxes or special events.
+  <strong>Note:</strong> God Items are permanent and unbreakable. They cannot be crafted — the only way to obtain them is through Loot Boxes or special events.
+</div>
+`,
+
+/* ────────────── SERVER STORE — SPRING KEY ────────────── */
+"store-spring": `
+<h2>Spring Key</h2>
+<div class="info-box success">
+  <strong>Purchase at:</strong> <a href="https://store.earthwarsmp.com" target="_blank" style="color:var(--green);font-weight:600">store.earthwarsmp.com</a>
+</div>
+<p>The <strong>Spring Key</strong> is a seasonal crate key that unlocks the exclusive <strong>Spring God Items</strong> — a nature-themed collection of legendary weapons and the full <strong>Bloomguard Armor Set</strong>.</p>
+
+<div class="card">
+  <h4>What You Get</h4>
+  <ul>
+    <li>A random <strong>Spring God Item</strong> from the pool below</li>
+    <li>Spring items are team-oriented with healing, buffing, and crowd-control abilities</li>
+    <li>The Bloomguard set has a powerful <strong>set bonus</strong> that heals your entire team</li>
+  </ul>
+</div>
+
+<h3>Spring God Items</h3>
+
+<h4>Weapons</h4>
+<table>
+  <tr><th>Item</th><th>Type</th><th>Ability</th></tr>
+  <tr><td><strong style="color:#f06498">Briar Thorn</strong></td><td>Netherite Sword</td><td><strong>Spreading Thorns</strong> — Marks enemies; allies popping the mark deal 1.5 bonus hearts + Slowness. <strong>Vine Snare</strong> — Root all enemies within 4 blocks for 2.5s, allies gain Speed I. <em>(12s CD)</em></td></tr>
+  <tr><td><strong style="color:#f58282">Harvest Scythe</strong></td><td>Netherite Hoe</td><td><strong>Reaping Arc</strong> — Sweeping hits heal 0.5 hearts per enemy hit. <strong>Petal Storm</strong> — 6-block petal ring dealing 2 hearts + knockback + Blindness. <em>(15s CD)</em></td></tr>
+  <tr><td><strong style="color:#e63290">Seedling Staff</strong></td><td>Netherite Shovel</td><td><strong>Bloom Barrier</strong> — Place a 3x3 leaf wall at target block (within 10 blocks). Lasts 8s. Blocks arrows and line of sight. <em>(25s CD)</em></td></tr>
+</table>
+
+<h4>Armor — Bloomguard Set</h4>
+<p>Full set grants <strong>Regeneration I</strong> for you and all allies within 8 blocks.</p>
+<table>
+  <tr><th>Item</th><th>Slot</th><th>Passive</th></tr>
+  <tr><td><strong style="color:#ff50aa">Bloomguard Crown</strong></td><td>Helmet</td><td><strong>War Bloom</strong> — When you take damage, allies within 6 blocks gain Absorption for 3s <em>(8s CD)</em></td></tr>
+  <tr><td><strong style="color:#ff50aa">Bloomguard Plate</strong></td><td>Chestplate</td><td><strong>Bark Skin</strong> — Below 5 hearts, gain Resistance I for 2s when hit <em>(6s CD)</em></td></tr>
+  <tr><td><strong style="color:#ff50aa">Bloomguard Greaves</strong></td><td>Leggings</td><td><strong>Rally Roots</strong> — While sprinting, allies within 5 blocks also get Speed I</td></tr>
+  <tr><td><strong style="color:#ff50aa">Bloomguard Roots</strong></td><td>Boots</td><td><strong>Grounded</strong> — Immune to knockback while sneaking</td></tr>
+</table>
+
+<div class="info-box">
+  <strong>Tip:</strong> The Bloomguard set is designed for team support. Pair the full armor set with Briar Thorn for maximum team synergy — your allies will trigger the thorn marks while you keep everyone healed.
 </div>
 `,
 
