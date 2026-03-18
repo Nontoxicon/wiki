@@ -961,6 +961,7 @@ commands: `
   <tr><td><code>/tutorial</code></td><td>Replay tutorial</td></tr>
   <tr><td><code>/playtime</code></td><td>Check playtime</td></tr>
   <tr><td><code>/discord link</code></td><td>Link Discord</td></tr>
+  <tr><td><code>/wiki</code></td><td>Open the server wiki</td></tr>
 </table>
 
 `
