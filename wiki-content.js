@@ -59,6 +59,168 @@ home: `
 </div>
 `,
 
+/* ────────────── SERVER STORE — RANKS ────────────── */
+"store-ranks": `
+<h2>Server Ranks</h2>
+<p>Support the server and unlock exclusive perks, kits, and commands. Each rank includes all perks from the rank below it.</p>
+
+<div class="rank-card knight">
+  <div class="rank-header">
+    <img src="images/knight.png" alt="Knight" class="rank-icon">
+    <div>
+      <h3 class="rank-title" style="color:#4ade80;margin:0">Knight</h3>
+      <p style="margin:2px 0;color:var(--text-muted);font-size:13px">Starter Rank</p>
+    </div>
+  </div>
+  <h4>Perks</h4>
+  <div class="perk-grid">
+    <span class="perk"><code>/anvil</code></span>
+    <span class="perk"><code>/craft</code></span>
+    <span class="perk"><code>/enderchest</code></span>
+    <span class="perk"><code>/grindstone</code></span>
+    <span class="perk"><code>/feed</code></span>
+    <span class="perk"><code>/hat</code></span>
+    <span class="perk"><code>/kit knight</code></span>
+    <span class="perk"><code>/repair</code> (120s cooldown)</span>
+    <span class="perk"><code>/pv 3</code></span>
+  </div>
+  <h4>Knight Kit</h4>
+  <table>
+    <tr><th>Item</th><th>Enchantments</th></tr>
+    <tr><td>Diamond Helmet</td><td>Protection II, Unbreaking I</td></tr>
+    <tr><td>Diamond Chestplate</td><td>Protection II, Unbreaking I</td></tr>
+    <tr><td>Diamond Leggings</td><td>Protection II, Unbreaking I</td></tr>
+    <tr><td>Diamond Boots</td><td>Protection II, Unbreaking I, Feather Falling I</td></tr>
+    <tr><td>Diamond Sword</td><td>Sharpness II, Unbreaking I</td></tr>
+    <tr><td>Diamond Pickaxe</td><td>Efficiency II, Unbreaking I</td></tr>
+    <tr><td>Shield</td><td>Unbreaking I</td></tr>
+  </table>
+  <p style="color:var(--text-muted);font-size:13px"><strong>Also includes:</strong> 64 Cobblestone, 32 Oak Planks, 32 Cooked Beef, 2 Golden Apples</p>
+</div>
+
+<div class="rank-card warlord">
+  <div class="rank-header">
+    <img src="images/warlord.png" alt="Warlord" class="rank-icon">
+    <div>
+      <h3 class="rank-title" style="color:#a78bfa;margin:0">Warlord</h3>
+      <p style="margin:2px 0;color:var(--text-muted);font-size:13px">Includes all Knight perks</p>
+    </div>
+  </div>
+  <h4>Additional Perks</h4>
+  <div class="perk-grid">
+    <span class="perk"><code>/repair</code> (60s cooldown)</span>
+    <span class="perk"><code>/repairall</code> (1200s cooldown)</span>
+    <span class="perk"><code>/kit warlord</code></span>
+    <span class="perk"><code>/fly</code></span>
+    <span class="perk"><code>/pv 5</code></span>
+  </div>
+  <h4>Warlord Kit</h4>
+  <table>
+    <tr><th>Item</th><th>Enchantments</th></tr>
+    <tr><td>Diamond Helmet</td><td>Protection III, Unbreaking II</td></tr>
+    <tr><td>Diamond Chestplate</td><td>Protection III, Unbreaking II</td></tr>
+    <tr><td>Diamond Leggings</td><td>Protection III, Unbreaking II</td></tr>
+    <tr><td>Diamond Boots</td><td>Protection III, Unbreaking II, Feather Falling II</td></tr>
+    <tr><td>Diamond Sword</td><td>Sharpness III, Unbreaking II, Fire Aspect I</td></tr>
+    <tr><td>Diamond Pickaxe</td><td>Efficiency III, Unbreaking II, Fortune I</td></tr>
+    <tr><td>Shield</td><td>Unbreaking II</td></tr>
+    <tr><td>Bow</td><td>Power II, Unbreaking I, Infinity I</td></tr>
+  </table>
+  <p style="color:var(--text-muted);font-size:13px"><strong>Also includes:</strong> 32 Arrows, 64 Cobblestone, 64 Oak Planks, 64 Cooked Beef, 4 Golden Apples</p>
+</div>
+
+<div class="rank-card titan">
+  <div class="rank-header">
+    <img src="images/titan.png" alt="Titan" class="rank-icon">
+    <div>
+      <h3 class="rank-title" style="color:#f87171;margin:0">Titan</h3>
+      <p style="margin:2px 0;color:var(--text-muted);font-size:13px">Includes all Warlord perks</p>
+    </div>
+  </div>
+  <h4>Additional Perks</h4>
+  <div class="perk-grid">
+    <span class="perk">Keep Experience on death</span>
+    <span class="perk">Priority in events &amp; tickets</span>
+    <span class="perk"><code>/kit titan</code></span>
+    <span class="perk"><code>/pv 5</code></span>
+  </div>
+  <h4>Titan Kit</h4>
+  <table>
+    <tr><th>Item</th><th>Enchantments</th></tr>
+    <tr><td>Netherite Helmet</td><td>Protection II, Unbreaking I</td></tr>
+    <tr><td>Netherite Chestplate</td><td>Protection II, Unbreaking I</td></tr>
+    <tr><td>Netherite Leggings</td><td>Protection II, Unbreaking I</td></tr>
+    <tr><td>Netherite Boots</td><td>Protection II, Unbreaking I, Feather Falling I</td></tr>
+    <tr><td>Netherite Sword</td><td>Sharpness II, Unbreaking I, Sweeping Edge I</td></tr>
+    <tr><td>Netherite Pickaxe</td><td>Efficiency II, Unbreaking I, Fortune I</td></tr>
+    <tr><td>Shield</td><td>Unbreaking I</td></tr>
+    <tr><td>Bow</td><td>Power II, Unbreaking I</td></tr>
+  </table>
+  <p style="color:var(--text-muted);font-size:13px"><strong>Also includes:</strong> 64 Arrows, 128 Cobblestone, 64 Oak Planks, 64 Cooked Beef, 8 Golden Apples, 2 Ender Pearls</p>
+</div>
+
+<div class="rank-card conqueror">
+  <div class="rank-header">
+    <img src="images/conqueror.png" alt="Conqueror" class="rank-icon">
+    <div>
+      <h3 class="rank-title" style="color:#d4a843;margin:0">Conqueror</h3>
+      <p style="margin:2px 0;color:var(--text-muted);font-size:13px">Includes all Titan perks</p>
+    </div>
+  </div>
+  <h4>Additional Perks</h4>
+  <div class="perk-grid">
+    <span class="perk">Second Chance in Wars</span>
+    <span class="perk"><code>/kit conqueror</code></span>
+    <span class="perk"><code>/pv 9</code></span>
+  </div>
+  <h4>Conqueror Kit</h4>
+  <table>
+    <tr><th>Item</th><th>Enchantments</th></tr>
+    <tr><td>Netherite Helmet</td><td>Protection III, Unbreaking II</td></tr>
+    <tr><td>Netherite Chestplate</td><td>Protection III, Unbreaking II</td></tr>
+    <tr><td>Netherite Leggings</td><td>Protection III, Unbreaking II</td></tr>
+    <tr><td>Netherite Boots</td><td>Protection III, Unbreaking II, Feather Falling II</td></tr>
+    <tr><td>Netherite Sword</td><td>Sharpness III, Unbreaking II, Sweeping Edge II</td></tr>
+    <tr><td>Netherite Pickaxe</td><td>Efficiency III, Unbreaking II, Fortune II</td></tr>
+    <tr><td>Netherite Axe</td><td>Sharpness II, Efficiency III</td></tr>
+    <tr><td>Shield</td><td>Unbreaking II</td></tr>
+    <tr><td>Bow</td><td>Power III, Unbreaking II, Flame I</td></tr>
+  </table>
+  <p style="color:var(--text-muted);font-size:13px"><strong>Also includes:</strong> 64 Arrows, 192 Cobblestone, 128 Oak Planks, 64 Cooked Beef, 16 Golden Apples, 1 Enchanted Golden Apple, 4 Ender Pearls, 1 Totem of Undying</p>
+</div>
+`,
+
+/* ────────────── SERVER STORE — GOD LOOT BOX ────────────── */
+"store-lootbox": `
+<h2>God Loot Box</h2>
+<p>The <strong>God Loot Box</strong> is the ultimate crate available in the server store. Each box guarantees a random <strong>God Item</strong> — legendary weapons, armor, and tools with unique abilities and maxed enchantments.</p>
+
+<div class="card">
+  <h4>What You Get</h4>
+  <ul>
+    <li><strong>1 Random God Item</strong> from the pool of 21+ unique legendary items</li>
+    <li>God Items have custom abilities, maxed enchantments, and unbreakable durability</li>
+    <li>Items include swords, axes, bows, tridents, armor sets, pickaxes, and more</li>
+  </ul>
+</div>
+
+<div class="info-box">
+  <strong>Tip:</strong> God Items are some of the most powerful gear on the server. Check the <a style="color:var(--accent-light);cursor:pointer" onclick="navigateTo('goditems')">God Items page</a> for the full list of possible drops and their abilities.
+</div>
+
+<h3>How It Works</h3>
+<ol>
+  <li>Purchase a God Loot Box from the server store</li>
+  <li>You receive a <strong>Loot Box key</strong> in-game</li>
+  <li>Use <code>/lootboxes</code> to open the crate GUI</li>
+  <li>Watch the animated spin and claim your God Item</li>
+</ol>
+
+<div class="info-box warn">
+  <strong>Note:</strong> God Items are permanent and unbreakable. They cannot be crafted — the only way to obtain them is through God Loot Boxes or special events.
+</div>
+`,
+
 /* ────────────── QUICK START ────────────── */
 quickstart: `
 <h2>Quick Start Guide</h2>
